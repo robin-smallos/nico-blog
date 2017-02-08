@@ -872,3 +872,34 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
  		Object.is 应被认为有其特殊的用途，而不能用它认为它比其它的相等对比更宽松或严格。
 
+```
+var a = {name: 1};
+var b = a;
+
+console.log(a);
+console.log(b);
+
+b.name = 2;
+console.log(a);
+console.log(b);
+
+var b = {name: 3};
+console.log(a);
+console.log(b);
+```
+
+运行 test.js 结果为：
+
+```
+{ name: 1 }
+{ name: 1 }
+{ name: 2 }
+{ name: 2 }
+{ name: 2 }
+{ name: 3 }
+```
+解释：a 是一个对象，b是对a的引用，即 a 和 b 指向同一块内存，所以前两个输出一样的。
+当 b.name 被修改时， 即 a 和 b 指向同一块内存的内容发生了改变，所以 a 也会改变。所以 3.4 时相同
+当 b 被覆盖时，b指向了一块新的内存，a还是指向原来的内存，所以最后两个输出不一样
+
+
