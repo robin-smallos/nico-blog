@@ -9,7 +9,7 @@
     +   <a href="https://wizardforcel.gitbooks.io/nginx-doc/content/index.html">Nginx 中文官方文档</a>
     +   <a href="http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html">Systemd入门教程 by阮一峰</a>
 
--   ###开始配置
+###开始配置
 ####systemd 下的 system 或 usr 创建 nginx.service 文件
 <pre><code>
     vim /usr/lib/systemd/system/nginx.service
