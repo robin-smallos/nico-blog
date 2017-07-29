@@ -16,3 +16,15 @@
             - Command +Option +O: 在浏览器中预览
             - Command+Option+X: 导出HTML
             - Ctrl+Alt+C: HTML标记拷贝至剪贴板
+
+###操作技巧
+
+-    1.Command+O可以实现头文件和源文件之间的快速切换
+-    2.一片区域的所有行进行同时编辑，Command+Shift+L可以将当前选中区域打散，然后进行同时编辑
+-    3.打散自然就有合并，Command＋J 可以把当前选中区域合并为一行
+-    4.在Command+P匹配到文件后，我们可以进行后续输入以跳转到更精确的位置：
+    +    @ 符号跳转：输入@symbol跳转到symbol符号所在的位置
+    +    \# 关键字跳转：输入#keyword跳转到keyword所在的位置
+    +    : 行号跳转：输入:12跳转到文件的第12行。
+-    5. command + option + <数字> 进行分屏
+

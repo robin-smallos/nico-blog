@@ -1,5 +1,5 @@
-##使用n升级nodejs版本##
---------------------
+##使用n升级nodejs版本
+
 1.安装n模块
     npm install -g n
 
